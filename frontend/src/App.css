@@ -103,6 +103,28 @@ section {
   color: #1d92eb;
 }
 
+/* Botón de acceso a la plataforma */
+
+.navegacion .nav-acceder {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 11px 20px;
+  background: #1d92eb;
+  color: #ffffff;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.navegacion .nav-acceder:hover {
+  background: #147ac9;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
 .boton-menu {
   display: none;
   background: transparent;
@@ -523,7 +545,11 @@ section {
   .contenedor {
     width: calc(100% - 32px);
   }
-
+  
+  .navegacion .nav-acceder {
+    margin-top: 8px;
+    width: 100%;
+  }
   .cabecera-interior {
     height: 68px;
   }
